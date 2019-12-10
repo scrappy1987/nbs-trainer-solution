@@ -2,7 +2,6 @@ package com.qa.business;
 
 import java.util.List;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.qa.persistence.domain.Trainer;
@@ -11,11 +10,10 @@ import com.qa.persistence.repository.TrainerRepository;
 @Service
 public class TrainerService {
 
-	@Autowired
 	private TrainerRepository trainerRepo;
 
-	public TrainerService() {
-
+	public TrainerService(TrainerRepository trainerRepo) {
+		this.trainerRepo = trainerRepo;
 	}
 
 	public List<Trainer> getAllTrainer() {

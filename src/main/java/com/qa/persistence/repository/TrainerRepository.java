@@ -6,7 +6,6 @@ import org.springframework.stereotype.Repository;
 import com.qa.persistence.domain.Trainer;
 
 @Repository
-public interface TrainerRepository extends JpaRepository<Trainer, Long>  {
-	
-	
+public interface TrainerRepository extends JpaRepository<Trainer, Long> {
+
 }
