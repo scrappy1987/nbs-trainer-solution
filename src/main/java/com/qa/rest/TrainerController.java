@@ -23,7 +23,7 @@ public class TrainerController {
 	public TrainerController(TrainerService trainerService) {
 		this.trainerService = trainerService;
 	}
-
+	//test
 	@GetMapping("/trainer")
 	public List<Trainer> getAllTrainer() {
 		return trainerService.getAllTrainer();
